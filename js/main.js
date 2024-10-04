@@ -24,9 +24,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app); // Initialize Firebase Storage
 
-// Function to remove the file extension from the file name
 function getFileNameWithoutExtension(fileName) {
-  return fileName.split(".").slice(0, -1).join(".");
+  return fileName.split(".").slice(0, -1).join(".").replace(/_+/g, " "); // Removes underscores
 }
 
 // Function to create audio players dynamically for each file

@@ -24,9 +24,7 @@
       <section
         class="intro relative 2xl:pt-0 2xl:px-20 xl:px-16 lg:px-10 h-screen"
       >
-        <div
-          class="heading 2xl:text-9xl text-center 2xl:py-7 xl:py-20 lg:py-14 mdx:py-7 lg:text-8xl mdx:text-7xl md:text-6xl md:py-20 sm:text-5xl sm:mt-10 mob:mt-10 mob:text-5xl smob:my-10"
-        >
+        <div class="heading">
           <h1
             class="text-shadow"
             data-aos="zoom-in-down"
@@ -42,44 +40,32 @@
             موقع متخصص فى التلاوات النادرة
           </p>
         </div>
-        <div
-          class="img w-fit overflow-hidden flex flex-wrap 2xl:gap-10 md:gap-5 sm:my-20 smob:gap-20"
-        >
+        <div class="img">
           <img
             src="img/abdelbast.png"
-            class="xl:w-72 xl:h-72 mdx:w-60 mdx:h-60 md:w-40 md:h-40 smob:w-32 smob:h-32 rounded-full"
             data-aos="zoom-in-right"
             data-aos-duration="3000"
           />
           <img
             src="img/elmenshawy.png"
-            class="xl:w-72 xl:h-72 mdx:w-60 mdx:h-60 md:w-40 md:h-40 smob:w-32 smob:h-32 rounded-full"
             data-aos="zoom-in-left"
             data-aos-duration="3000"
           />
           <img
             src="img/eltablawy.png"
-            class="xl:w-72 xl:h-72 mdx:w-60 mdx:h-60 md:w-40 md:h-40 smob:w-32 smob:h-32 rounded-full"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           />
           <img
             src="img/sa3eed.png"
-            class="xl:w-72 xl:h-72 mdx:w-60 mdx:h-60 md:w-40 md:h-40 smob:w-32 smob:h-32 rounded-full"
             data-aos="zoom-in-down"
             data-aos-duration="3000"
           />
         </div>
-        <i
-          class="bx bxs-chevron-down absolute animate-bounce right-1/2 text-5xl translate-x-1/2 translate-y-1/2 2xl:bottom-0 smob:bottom-8"
-        ></i>
+        <i class="bx bxs-chevron-down"></i>
       </section>
-      <section
-        class="categories my-36 pb-96 px-20 min-h-screen smob:mt-0 smob:pb-0"
-      >
-        <div
-          class="container flex justify-center items-center gap-10 lg:gap-7 w-full flex-wrap"
-        >
+      <section class="categories">
+        <div class="container">
           <div
             id="abdelbast"
             class="card"
@@ -116,7 +102,12 @@
               </p>
             </div>
           </div>
-          <div class="card" data-aos="zoom-in" data-aos-duration="3000">
+          <div
+            id="tablawy"
+            class="card"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+          >
             <div class="img">
               <img src="img/eltablawy.png" alt="" />
             </div>
@@ -129,7 +120,12 @@
               </p>
             </div>
           </div>
-          <div class="card" data-aos="zoom-in" data-aos-duration="3000">
+          <div
+            class="card"
+            id="sa3ed"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+          >
             <div class="img">
               <img src="img/sa3eed.png" alt="" />
             </div>
@@ -145,7 +141,7 @@
         </div>
       </section>
       <section
-        class="content flex justify-center items-center flex-col gap-5 my-20 px-20"
+        class="content flex justify-center items-center flex-col gap-5 my-20 2xl:px-20 smob:px-4"
         id="content"
       ></section>
     </main>

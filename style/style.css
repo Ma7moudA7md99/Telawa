@@ -669,7 +669,7 @@ video {
 body {
   direction: rtl;
   box-sizing: border-box;
-  font-family: "Jomhuria", serif;
+  font-family: "Amiri", serif;
 }
 
 header {
@@ -699,8 +699,7 @@ header {
 
 @media (min-width: 320px) {
   .heading {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-top: 3.5rem;
     font-size: 3rem;
     line-height: 1;
   }
@@ -708,13 +707,13 @@ header {
 
 @media (min-width: 425px) {
   .heading {
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
   }
 }
 
 @media (min-width: 640px) {
   .heading {
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
     font-size: 3rem;
     line-height: 1;
   }
@@ -758,17 +757,18 @@ header {
   .heading {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
-    font-size: 8rem;
+    font-size: 6rem;
     line-height: 1;
   }
 }
 
 .intro .img {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
   flex-wrap: wrap;
-  overflow: hidden;
 }
 
 @media (min-width: 320px) {
@@ -797,6 +797,7 @@ header {
 }
 
 .intro .img img {
+  margin: 0px;
   border-radius: 9999px;
 }
 
@@ -888,18 +889,29 @@ section.categories {
   }
 }
 
-.categories .container {
+.categories .cat-container {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 0px;
+}
+
+@media (min-width: 320px) {
+  .categories .cat-container {
+    gap: 0.75rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .categories .cat-container {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1024px) {
-  .categories .container {
-    gap: 1.75rem;
+  .categories .cat-container {
+    gap: 0px;
   }
 }
 
@@ -907,7 +919,7 @@ section.categories {
   position: relative;
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
-  width: 18rem;
+  width: 20rem;
   cursor: pointer;
   border-radius: 0.5rem;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
@@ -915,6 +927,13 @@ section.categories {
   transition-property: all;
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 425px) {
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .description {

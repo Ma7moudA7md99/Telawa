@@ -622,6 +622,10 @@ video {
   right: 50%;
 }
 
+.-bottom-10 {
+  bottom: -2.5rem;
+}
+
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -640,6 +644,10 @@ video {
   height: 100vh;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -647,6 +655,16 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.translate-x-1\/2 {
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-1\/2 {
+  --tw-translate-y: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @keyframes bounce {
@@ -821,6 +839,13 @@ img {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 325px) {
+  .card:hover .description p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 .content div {
   width: 100%;
   border-radius: 0.75rem;
@@ -883,6 +908,13 @@ audio {
   min-width: 100%;
 }
 
+@media (min-width: 325px) {
+  audio {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
 @media (min-width: 425px) {
   audio {
     width: 4rem;
@@ -922,6 +954,30 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 
 @media (min-width: 325px) {
+  .smob\:bottom-5 {
+    bottom: 1.25rem;
+  }
+
+  .smob\:-bottom-5 {
+    bottom: -1.25rem;
+  }
+
+  .smob\:bottom-7 {
+    bottom: 1.75rem;
+  }
+
+  .smob\:bottom-10 {
+    bottom: 2.5rem;
+  }
+
+  .smob\:bottom-8 {
+    bottom: 2rem;
+  }
+
+  .smob\:bottom-9 {
+    bottom: 2.25rem;
+  }
+
   .smob\:my-10 {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -931,16 +987,8 @@ audio::-webkit-media-controls-time-remaining-display {
     margin-top: 0px;
   }
 
-  .smob\:h-20 {
-    height: 5rem;
-  }
-
   .smob\:h-32 {
     height: 8rem;
-  }
-
-  .smob\:w-20 {
-    width: 5rem;
   }
 
   .smob\:w-32 {
@@ -950,13 +998,13 @@ audio::-webkit-media-controls-time-remaining-display {
   .smob\:gap-20 {
     gap: 5rem;
   }
+
+  .smob\:pb-0 {
+    padding-bottom: 0px;
+  }
 }
 
 @media (min-width: 425px) {
-  .mob\:mb-96 {
-    margin-bottom: 24rem;
-  }
-
   .mob\:mt-10 {
     margin-top: 2.5rem;
   }
@@ -1073,6 +1121,10 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:bottom-0 {
+    bottom: 0px;
+  }
+
   .\32xl\:gap-10 {
     gap: 2.5rem;
   }
